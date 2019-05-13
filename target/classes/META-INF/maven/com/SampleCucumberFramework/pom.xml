@@ -159,18 +159,19 @@
 			<version>6.14.3</version>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- Extent Reports -->
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
-			<version>3.0.6</version>
+			<version>3.1.2</version>
 		</dependency>
 
 		<dependency>
-			<groupId>com.relevantcodes</groupId>
-			<artifactId>extentreports</artifactId>
-			<version>2.41.2</version>
+			<groupId>com.vimalselvam</groupId>
+			<artifactId>cucumber-extentsreport</artifactId>
+			<version>2.0.4</version>
 		</dependency>
-
 
 		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-core -->
 		<dependency>
@@ -228,13 +229,6 @@
 			<version>1.2.5</version>
 		</dependency>
 
-		<!-- Extent Reports -->
-		<dependency>
-			<groupId>com.aventstack</groupId>
-			<artifactId>extentreports</artifactId>
-			<version>3.0.5</version>
-		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
 		<dependency>
 			<groupId>org.freemarker</groupId>
@@ -247,11 +241,7 @@
 			<artifactId>cucumber-reporting</artifactId>
 			<version>3.6.0</version>
 		</dependency>
-		<dependency>
-			<groupId>com.vimalselvam</groupId>
-			<artifactId>cucumber-extentsreport</artifactId>
-			<version>2.0.4</version>
-		</dependency>
+
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>

@@ -4,6 +4,8 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 
+import com.cucumber.listener.Reporter;
+
 import core.DriverFactory;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -13,6 +15,7 @@ import pageObjects.BasePage;
 public class TrialClass2 extends DriverFactory{
 	@Given("^user1 navigates to \"([^\"]*)\" website$")
 	public void user_navigates_to_website(String url) throws InterruptedException, IOException {
+		//Reporter.addStepLog("Accessing Website");
 		getDriver().get(url);
 	}
 

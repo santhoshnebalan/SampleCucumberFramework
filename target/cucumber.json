@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 1525064368,
+              "duration": 1517632449,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 89211765,
+              "duration": 90720476,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 777335428,
+              "duration": 796552479,
               "status": "passed"
             },
             "line": 4,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 197476987,
+              "duration": 195473840,
               "status": "passed"
             },
             "line": 5,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 118185301,
+              "duration": 119390633,
               "status": "passed"
             },
             "line": 6,
@@ -80,7 +80,7 @@
           },
           {
             "result": {
-              "duration": 153674510,
+              "duration": 155137954,
               "status": "passed"
             },
             "line": 8,
@@ -92,7 +92,7 @@
           },
           {
             "result": {
-              "duration": 137870817,
+              "duration": 136480337,
               "status": "passed"
             },
             "line": 9,
@@ -113,7 +113,7 @@
           },
           {
             "result": {
-              "duration": 934283227,
+              "duration": 980415102,
               "status": "passed"
             },
             "line": 11,
@@ -125,7 +125,7 @@
           },
           {
             "result": {
-              "duration": 40247223,
+              "duration": 42531277,
               "status": "passed"
             },
             "line": 12,
@@ -151,7 +151,7 @@
         "before": [
           {
             "result": {
-              "duration": 1061971070,
+              "duration": 1044665675,
               "status": "passed"
             },
             "match": {
@@ -166,7 +166,7 @@
         "after": [
           {
             "result": {
-              "duration": 87075395,
+              "duration": 85612214,
               "status": "passed"
             },
             "match": {
@@ -179,7 +179,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1112747936,
+              "duration": 1205667776,
               "status": "passed"
             },
             "line": 4,
@@ -200,7 +200,7 @@
           },
           {
             "result": {
-              "duration": 136493558,
+              "duration": 92522222,
               "status": "passed"
             },
             "line": 5,
@@ -221,8 +221,94 @@
           },
           {
             "result": {
-              "duration": 1726615730,
+              "duration": 1201730570,
               "status": "passed"
+            },
+            "line": 6,
+            "name": "user1 should be presented with a promo alert",
+            "match": {
+              "location": "TrialClass2.user_should_be_presented_with_a_promo_alert()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1011189150,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.setup()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "validate promo code alert is visible when clicking on the special offers link",
+        "description": "",
+        "id": "products-page;validate-promo-code-alert-is-visible-when-clicking-on-the-special-offers-link;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 704127998,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.tearDownAndScreenshotOnFailure(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1285331512,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user1 navigates to \"http://www.webdriveruniversity.com/Page-Object-Model/products.html\" website",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://www.webdriveruniversity.com/Page-Object-Model/products.html",
+                  "offset": 20
+                }
+              ],
+              "location": "TrialClass2.user_navigates_to_website(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15026398860,
+              "error_message": "java.lang.AssertionError: WebElement is NOT visible, Exception: Expected condition failed: waiting for visibility of element located by By.cssSelector: #container-special-offers22 (tried for 15 second(s) with 500 MILLISECONDS interval)\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat pageObjects.BasePage.WaitUntilWebElementIsVisibleUsingByLocator(BasePage.java:252)\n\tat stepDefinitions.TrialClass2.user_clicks_on(TrialClass2.java:25)\n\tat ✽.When user1 clicks on \"#container-special-offers22\"(fff2.feature:5)\n",
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "user1 clicks on \"#container-special-offers22\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "#container-special-offers22",
+                  "offset": 17
+                }
+              ],
+              "location": "TrialClass2.user_clicks_on(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
             },
             "line": 6,
             "name": "user1 should be presented with a promo alert",
@@ -239,5 +325,83 @@
     "id": "products-page",
     "keyword": "Feature",
     "uri": "fff2.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1134537984,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "validate promo code alert is visible when clicking on the special offers link",
+        "description": "",
+        "id": "products-page;validate-promo-code-alert-is-visible-when-clicking-on-the-special-offers-link",
+        "after": [
+          {
+            "result": {
+              "duration": 91978740,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.tearDownAndScreenshotOnFailure(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 857534262,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "abc",
+            "match": {
+              "location": "TrialClass3.user_navigates_to_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5064776215,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "rst",
+            "match": {
+              "location": "TrialClass3.user_clicks_on()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 78664,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "xyz",
+            "match": {
+              "location": "TrialClass3.user_should_be_presented_with_a_promo_alert()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Products page",
+    "description": "",
+    "id": "products-page",
+    "keyword": "Feature",
+    "uri": "fff3.feature"
   }
 ]
